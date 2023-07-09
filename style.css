@@ -33,6 +33,10 @@ body {
     letter-spacing: 5px;
     font-weight: 100;
 }
+.logo h2:hover {
+    cursor: pointer;
+    color: tomato;
+}
 header {
     display: flex;
     align-items: center;
@@ -40,7 +44,7 @@ header {
     position: fixed;
     z-index: 2;
     width: 100%;
-    background-color: #020000;
+    background-color: #0a0f17;
 }
 .menu_icon {
     margin-left: 50vw;
@@ -60,6 +64,10 @@ ul li a {
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
+}
+nav a:hover {
+    color: red;
+    font-weight: bold;
 }
 
 .heading {
@@ -99,6 +107,10 @@ ul li a {
 }
 .social_icons i {
     margin-top: 8px;
+}
+.social_icons i:hover {
+    color: red;
+    cursor: pointer;
 }
 
 .profile img {
@@ -238,7 +250,11 @@ ul li a {
     letter-spacing: 2px;
     cursor: pointer;
 }
-
+#button:hover {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
 .contact_details {
     margin: 2em;
     letter-spacing: 2px;
@@ -283,6 +299,23 @@ textarea {
     border: 1px solid transparent;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #0a0f17;
+}
+
+footer b {
+    color: red;
+}
+footer h2 {
+    display: none;
+}
+footer p {
+    padding: 4%;
+    font-size: 0.9rem;
+}
+
 @media screen and (min-width: 600px) {
     .menu_icon {
         display: none;
@@ -297,6 +330,9 @@ textarea {
     }
     nav li {
         padding: 0px 10px;
+    }
+    .logo span {
+        font-size: 40px;
     }
     .profile {
         display: flex;
@@ -405,5 +441,27 @@ textarea {
     .contact_inputs input,
     textarea {
         width: 70%;
+    }
+    footer h2 {
+        font-family: "Saira Stencil One", "Poppins", sans-serif;
+        display: block;
+        font-weight: 100;
+        letter-spacing: 3px;
+    }
+    footer span {
+        font-family: "Saira Stencil One", sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 38.4px;
+        color: red;
+    }
+    footer {
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    footer p {
+        padding: 0;
+        letter-spacing: 1px;
     }
 }
